@@ -3,8 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@version/react-router-v3": "^1.0.0",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "history": "^4.10.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.3",
+    "node-sass": "^4.12.0",
     "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
+    "react-logger": "^1.1.0",
+    "react-producthunt": "^0.2.7",
+    "react-router": "^3.2.4",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
@@ -27,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.2"
   }
 }

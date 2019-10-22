@@ -1,0 +1,155 @@
+button{
+    text-align: center;
+}
+.welcomeContainer{
+    width: 101vw;
+    height: 101vh;
+    margin-left: -1vw;
+    margin-top: -1vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    transition: transform 0.6s ease-in-out;
+    z-index: 2;
+}
+.welcomeContainerBackground{
+    width: 304vw;
+    height: 100vh;
+    /* margin-left: 1vw; */
+    margin-top: -1vw;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    transition: transform 2s ease-in-out;
+    z-index: -2;
+}
+
+.welcomeBackground1{
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    background: url("./Sport/155911.jpg") no-repeat center fixed; 
+    opacity: 0.6;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; /* version standardisée */
+    z-index: -2;
+}
+.welcomeBackground2{
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    background: url("./Sport/girl-sport.png") no-repeat center ; 
+    opacity: 0.6;
+    /* -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+    background-size: cover; 
+    background-color: black;
+    z-index: -2;
+}
+.welcomeBackground3{
+    width: 33%;
+    height: 100%;
+    overflow: hidden;
+    background: url("./Sport/05westbrook1-jumbo-v2.png") no-repeat center ; 
+    opacity: 0.6;
+    /* -webkit-background-size: cover; pour anciens Chrome et Safari */
+    /* background-size: cover; version standardisée */
+    background-color: black;
+    z-index: -2;
+}
+
+.welcomeContainerBackground.active{
+    transform: translateX(-33%);
+}
+.welcomeContainerBackground.active2{
+    transform: translateX(-66%);
+}
+.title{
+    font-family: "Quantum";
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: white;
+    text-align: center;
+    margin-top: 40vh;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.formButton{
+    font-family: "Montserrat-Black";
+    width: auto;
+    height: 5.9vh;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 0px;
+    border: 0.1em solid #6FD1CF;
+    background-color: transparent;
+    color:white;
+    font-size: 1.2vw;
+    background-color: transparent;
+    letter-spacing: 0.3vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 2;
+    /* align-self: center; */
+    transition: 0.3s;
+    /* display: inline-block; */
+}
+.formButton:hover{
+    background-color: #6FD1CF;
+    color:white;
+}
+
+.localInfos{
+    position: absolute;
+    width: 10vw;
+    height: 10vh;
+    font-family: "Rodina";
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-weight: 300;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    z-index: 3;
+}
+.localHourValue{
+    width: 100%;
+    font-size: 2em;
+    position: relative;
+    justify-content: center;
+    z-index: 3;
+}
+
+.localTemperature{
+    width: 100vw;
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 95vw;
+    font-size: 2.2em;
+    height: 10vh;
+    font-family: "Rodina";
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-weight: 300;
+    color: white;
+    z-index: 4;
+}
