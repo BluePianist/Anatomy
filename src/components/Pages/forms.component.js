@@ -75,7 +75,20 @@ export default class form extends React.Component {
         Password: this.state.Password,
       }
       Axios.post('http://localhost:5000/user_route/add', user)
-        .then(res => console.log(res.data))
+        .then(res => {console.log(res.data)
+          this.setState({
+            NameAfterLoggedIn: res.data.Name
+          })
+          const history = createBrowserHistory();
+            history.push({
+              pathname:'/dashboard',
+              search:'/',
+              state: {
+                NameAfterLoggedIn:this.state.NameAfterLoggedIn
+              }
+            });
+            window.location.reload();
+        })
         .catch(err => {
           // throw(err)
           console.log('Error ::' + err)
@@ -124,7 +137,7 @@ export default class form extends React.Component {
                 NameAfterLoggedIn:this.state.NameAfterLoggedIn
               }
             });
-            // window.location.reload();
+            window.location.reload();
           } else {
             console.log("Bad credentials");
             this.setState({credentialsErrors: 'Bad credentials'});
