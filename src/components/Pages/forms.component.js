@@ -189,23 +189,23 @@ export default class form extends React.Component {
       <div className="container" id="container">
       <div className="backgroundForm"></div>
       <div className="form-container sign-up-container">
-        <form action ="#" onSubmit={this.handleSubmit} noValidate>
-          <h1>Create Account</h1>
-          <span>Or use your Email for registration</span>
+        <form className="formulaire"action ="#" onSubmit={this.handleSubmit} noValidate>
+          <h1 className="header">Create Account</h1>
+          <span className="orUse">Or use your Email for registration</span>
           <div className="Name">
-          <input type="text" placeholder="Name" name="Name" noValidate onChange={this.handleChange}/>
+          <input className="basicInput" type="text" placeholder="Name" name="Name" noValidate onChange={this.handleChange}/>
           {FormErrors.Name.length > 0 && (
             <span className="errorMessage">{FormErrors.Name}</span>
           )}
           </div>
           <div className="Email">
-          <input type="email" placeholder="Email" name="Email" noValidate onChange={this.handleChange}/>
+          <input className="basicInput" type="email" placeholder="Email" name="Email" noValidate onChange={this.handleChange}/>
           {FormErrors.Email.length > 0 && (
             <span className="errorMessage">{FormErrors.Email}</span>
           )}
           </div>
           <div className="Password">
-          <input type="password" placeholder="Password" name="Password" noValidate onChange={this.handleChange}/>
+          <input className="basicInput" type="password" placeholder="Password" name="Password" noValidate onChange={this.handleChange}/>
           {FormErrors.Password.length > 0 && (
             <span className="errorMessage">{FormErrors.Password}</span>
           )}
@@ -214,17 +214,17 @@ export default class form extends React.Component {
         </form>
       </div>
         <div className="form-container sign-in-container">
-          <form action ="#" onSubmit={this.handleSubmitLogin} noValidate>
-            <h1>Sign In</h1>
-            <span>Or use your Account</span>
+          <form className="formulaire"action ="#" onSubmit={this.handleSubmitLogin} noValidate>
+            <h1 className="header">Sign In</h1>
+            <span className="orUse">Or use your Account</span>
             <div className="signInEmail">
               {credentialsErrors.length > 0 && (
                 <span className = "errorMessage">{credentialsErrors}</span>
               )} 
-              <input type="email" placeholder="Email" name="EmailLogin" noValidate onChange={this.handleChangeLogin}/>
+              <input className="basicInput" type="email" placeholder="Email" name="EmailLogin" noValidate onChange={this.handleChangeLogin}/>
             </div>
             <div className="signInPassword">
-              <input type="password" placeholder="Password" name="PasswordLogin" noValidate onChange={this.handleChangeLogin}/>
+              <input className="basicInput" type="password" placeholder="Password" name="PasswordLogin" noValidate onChange={this.handleChangeLogin}/>
             </div>
             <button type="submit" onClick={this.routeChange}>Sign In</button>
           </form>
@@ -232,13 +232,13 @@ export default class form extends React.Component {
         <div className="overlay-container">
           <div className="overlay">
             <div className="overlay-panel overlay-left">
-              <h1>Welcome Back !</h1>
-              <p>To keep connect with us please login with your personnal infos</p>
+              <h1 className="header">Welcome Back !</h1>
+              <p className="paragraphe">To keep connect with us please login with your personnal infos</p>
               <button className="ghost" id="signIn">Sign In</button>
             </div>
             <div className="overlay-panel overlay-right">
-              <h1>Hello, Friend !</h1>
-              <p>Enter your personnal details and start a journey with us</p>
+              <h1 className="header">Hello, Friend !</h1>
+              <p className="paragraphe">Enter your personnal details and start a journey with us</p>
               <button className="ghost" id="signUp">Sign Up</button>
             </div>
           </div>

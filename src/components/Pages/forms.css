@@ -17,30 +17,33 @@
   background-color: black;
   z-index: -4;
 }
+body{
+  background-color: #6FD1CF;
+}
   
-  h1 {
-    font-size: 40pt;
-    font-weight: bold;
-    margin: 0;
-    color: white;
-    align-items: center;
-  }
+.header {
+  font-size: 40pt;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  align-items: center;
+}
   
-  p {
-    color: white;
-    font-size: 12pt;
-    font-weight: 100;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    margin: 20px 0 30px;
-    align-items: center;
-  }
+.paragraphe {
+  color: white;
+  font-size: 12pt;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+  align-items: center;
+}
   
-  span {
-    font-size: 15pt;
-    color: white;
-    align-items: center;
-  }
+.orUse {
+  font-size: 15pt;
+  color: white;
+  align-items: center;
+}
   
   a {
     color: white;
@@ -76,15 +79,17 @@
       background-color: transparent;
       border-color: #ffffff;
   }
-  input {
+  .basicInput {
     background-color: #eee;
     padding: 1.2vh 1vw;
     width: 100%;
     display: flex;
     align-items: center;
+    border: none;
+    margin: 1.1vh 0;
   }
-  form {
-    /* background-color: rgb(87, 101, 70, 0.9); */
+
+  .formulaire {
     background: radial-gradient(rgb(111, 209, 207, 1), rgb(111, 209, 207, 0.8));
     display: inline-flex;
     align-items: center;
@@ -93,7 +98,7 @@
     padding: 0 50px;
     height: 100%;
     text-align: center;
-  }
+  } 
   .container{
     font-family: "Rodina";
     background-color: transparent;
@@ -110,12 +115,10 @@
     max-width: 100vmax;  
   }
   .form-container {
+    position: absolute;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   
   .sign-in-container {
