@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 // import { BrowserRouter as Router} from 'react-router-dom';
 import axios from 'axios';
 import "react-datepicker/dist/react-datepicker.css";
-import './dashboard.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './dashboard.css'
 
 import ItemModalAddSport from "../ItemModalAddSport";
 import ItemModalAddWeight from "../ItemModalAddWeight";
@@ -79,17 +78,6 @@ export default class Dashboard extends Component{
 
     render() {
         return(
-            // <div className="dash">
-            //     <div className="descr">
-            //     </div>
-            //     <div className="popup" id="popup">
-            //         <div className="popupText">
-            //         Welcome Back 
-            //         <br/>
-            //         {this.state.user} !
-            //         </div>
-            //     </div>
-            // </div>
             <div className="dashboardContainer" id="dashboardContainer">
                 <div className="popup" id="popup">
                     <div className="popupText">
@@ -98,14 +86,11 @@ export default class Dashboard extends Component{
                         {this.state.user} !
                     </div>
                 </div>
-                <header className="App-header">
-                    <div className="Card"></div>
-                </header>
-                
+                {/* <p>Hello {this.state.user}, you are in the Dashboard Page</p> */}
                 <ItemModalAddSport id={this.state.id}/>
                 <ItemModalAddWeight id={this.state.id}/>
                 <ItemModalAddSleepingHours id={this.state.id}/>
-                <div >
+                <div className="Chart">
                     <WeightList id={this.state.id}/>
                     <SleepingHoursList id={this.state.id}/>
                     <ExerciceList id={this.state.id}/>

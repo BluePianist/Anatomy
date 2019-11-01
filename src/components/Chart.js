@@ -24,7 +24,7 @@ export default class Chart extends Component {
                     responsive: true,
                     title:{
                         display : true , 
-                        text : this.props.title,
+                        text : 'Your evolution',
                         fontSize : 25
                     }
                 }}
@@ -39,7 +39,7 @@ export default class Chart extends Component {
                         responsive: true,
                         title:{
                             display : true , 
-                            text : this.props.title,
+                            text : 'Chart1',
                             fontSize : 25
                         }
                     }}
@@ -54,7 +54,7 @@ export default class Chart extends Component {
                         responsive: true,
                         title:{
                             display : true , 
-                            text : this.props.title,
+                            text : 'Chart1',
                             fontSize : 25
                         }
                     }}
@@ -73,8 +73,10 @@ export default class Chart extends Component {
 
     render(){
         return(
-            <div className ="chart">
-                {this.type()}
+            <div className="chart">
+                <div className ="chart1">
+                    {this.type()}
+                </div>
             </div>
         );
     }

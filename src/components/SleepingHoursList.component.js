@@ -45,7 +45,7 @@ export default class sleepingHoursList extends Component {
     render(){
         return(
             <div>
-                <Chart chartData={this.state.chartData} type="l" title="Your sleeping hours evolution"/>
+                <Chart chartData={this.state.chartData} type="l"/>
             </div>
         );
     }

@@ -68,9 +68,7 @@ export default class ItemModalAddSleepingHours extends Component {
     render(){
         return(
             <div>
-                {/* <button>Add Sleeping Hours</button> */}
-                
-                <Button className="boutton"
+                <Button
                     onClick={this.toggle}
                 >Add Sleeping Hours</Button>
 
@@ -103,7 +101,7 @@ export default class ItemModalAddSleepingHours extends Component {
                     </div>
 
                     <div className="form-group">
-                        <Button type="submit" className ="button">Add a new exercice</Button>
+                        <Button type="submit" className ="btn btnprimary">Add a new exercice</Button>
                     </div>
 
                 </form>      
