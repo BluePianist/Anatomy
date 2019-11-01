@@ -1,19 +1,13 @@
-.chart{
-    align-items: center;
-    display: inline-block;
-    justify-content: center;
-}
 
-.chart1{
-    margin-top: 15px;
-    margin-bottom: 15px;
+.chart{
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
     /* border-radius: 10px; */
     background-color: #FFFFFF;
     align-items: center;
     display: flex;
-    flex-direction: column;
     width: 650px;
     height: 350px;
     display: inline-block;

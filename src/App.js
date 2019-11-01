@@ -1,5 +1,5 @@
 import React , { Component }from 'react'
-// import './App.css'
+import './App.css'
 import { Switch, Route } from 'react-router-dom'
 import Welcome from './components/Pages/Welcome.component'
 import Dashboard from './components/Pages/dashboard.component';

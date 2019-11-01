@@ -48,7 +48,7 @@ export default class weightList extends Component {
     render(){
         return(
             <div>
-                <Chart chartData={this.state.chartData} type="l"/>
+                <Chart chartData={this.state.chartData} type="l" title="Your weight evolution"/>
             </div>
         );
     }

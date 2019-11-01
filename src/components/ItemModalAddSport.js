@@ -90,7 +90,7 @@ export default class ItemModalAddSport extends Component {
                     onClick={this.toggle}
                 >Add Sport</Button>
 
-                <Modal 
+                <Modal className="Modal"
                     isOpen = {this.state.modal}
                     toggle = {this.toggle}
                 >
@@ -139,7 +139,7 @@ export default class ItemModalAddSport extends Component {
                             </div>
         
                             <div className="form-group">
-                                <Button type="submit" className ="btn btnprimary">Add</Button>
+                                <Button type="submit" className ="btn">Add</Button>
                             </div>
         
                         </form>      

@@ -2,7 +2,8 @@
     width: 101vw;
     height: 101vh;
     text-align: center;
-    font-size: 3em;
+    background-color: #6FD1CF;
+    flex-direction: row;
 }
 
 .popup{
@@ -37,3 +38,45 @@
  .popup.desactivePopup{
      opacity: 0;
  }
+
+ .tableau{
+     width: 50%;
+     margin:auto;
+ }
+
+ /* .boutton {
+    justify-content: center;
+    margin-top: 0.5vh;
+    border-radius: 50px;
+    border: 0.2em solid white;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    transition: transform 80ms ease-in;
+} */
+
+.App-header {
+    background-color: #282c34;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .Card{
+    font-size: 20 vh;
+    background-color: #ffffff;
+    min-height: 38vh;
+    min-width: 60vh;
+    border-radius: 15px;
+  }
+
+  .descr{
+    background-color: #282c34;
+    width: 45vh;
+    min-height: 45vh;
+  }
