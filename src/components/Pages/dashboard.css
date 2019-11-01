@@ -37,3 +37,9 @@
  .popup.desactivePopup{
      opacity: 0;
  }
+
+ .tableau{
+    width: 50%;
+    margin:auto;
+    font-size: 0.5em;
+}

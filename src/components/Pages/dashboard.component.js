@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 // import { BrowserRouter as Router} from 'react-router-dom';
 import axios from 'axios';
 import "react-datepicker/dist/react-datepicker.css";
-import './dashboard.css'
+import './dashboard.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 import ItemModalAddSport from "../ItemModalAddSport";
 import ItemModalAddWeight from "../ItemModalAddWeight";
