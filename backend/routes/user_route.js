@@ -32,6 +32,8 @@ router.route('/add').post(async function (req, res) {
         Email : req.body.Email.toLowerCase(),
         Password : req.body.Password,
         height : 0,
+        weight : 0,
+        idealWeight : 0,
         sportsList : [],
         weight_evolution : [],
         sleepingHours:[] 
@@ -87,11 +89,13 @@ router.route('/:id').delete((req,res)=>{
 });
 
 //Update
-router.route('/update/:id').post((req,res)=>{
+router.route('/update/:id').put((req,res)=>{
     User.findById(req.params.id)
     .then(user=>{
-        user.username = req.body.username;
+        // user.username = req.body.username;
         user.height = Number(req.body.height);
+        user.weight = Number(req.body.weight);
+        user.idealWeight = Number(req.body.idealWeight);
   
         user.save()
         .then(()=> res.json('User updated'))
