@@ -62,6 +62,7 @@ export default class ItemModalAddWeight extends Component {
         });
 
         console.log(weightList);
+        window.location.reload();
         this.toggle();  //Close the modal
     }
 
@@ -76,7 +77,7 @@ export default class ItemModalAddWeight extends Component {
                     isOpen = {this.state.modal}
                     toggle = {this.toggle}
                 >
-                    <ModalHeader toggle = {this.toggle}>Add your weight to the list</ModalHeader>
+                    <ModalHeader className="modalHeader" toggle = {this.toggle}>Add your weight</ModalHeader>
                     <ModalBody>
                     <form onSubmit={this.onSubmit}>
                         
@@ -101,7 +102,7 @@ export default class ItemModalAddWeight extends Component {
                         </div>
     
                         <div className="form-group">
-                            <Button type="submit" className ="btn btnprimary">Add your weight</Button>
+                            <Button type="submit" className ="btn btnprimary">Add</Button>
                         </div>
     
                     </form>      

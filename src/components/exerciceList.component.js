@@ -44,8 +44,8 @@ export default class exerciceList extends Component{
 
     render(){
         return(
-            <div>
-                <h3>Exercices List</h3>
+            <div className="tab">
+                <h3 className="tabTitle">Exercices List</h3>
                 <div className="tableau">
                     <table className="table">
                             <thead className="header-tab">

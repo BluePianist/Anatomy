@@ -89,7 +89,7 @@ export default class Dashboard extends Component{
                         </div>
                 </div>
                 <div className ="navbar2">
-                    ANATOMY
+                    <h3 className="log_tit">ANATOMY</h3>
                     <ItemModalAddSport id={this.state.id}/>
                     <ItemModalAddWeight id={this.state.id}/>
                     <ItemModalAddSleepingHours id={this.state.id}/>
@@ -100,7 +100,7 @@ export default class Dashboard extends Component{
                     </div>
                     <div className="content">
                         <div className="headerDash">
-                            Welcome to ANATOMY ! 
+                            Hello {this.state.user}, you can see your daily evolution here.
                         </div>
                         <WeightList id={this.state.id}/>
                         <SleepingHoursList id={this.state.id}/>
@@ -111,12 +111,3 @@ export default class Dashboard extends Component{
         )
     }
 }
-
-{/* <ItemModalAddSport id={this.state.id}/>
-                <ItemModalAddWeight id={this.state.id}/>
-                <ItemModalAddSleepingHours id={this.state.id}/>
-                <div className="Chart">
-                    <WeightList id={this.state.id}/>
-                    <SlepingHoursList id={this.state.id}/>
-                    <ExerciceList id={this.state.id}/>
-            </div> */}

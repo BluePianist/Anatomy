@@ -80,6 +80,7 @@ export default class ItemModalAddSport extends Component {
         });
 
         console.log(exercice);
+        window.location.reload();
         this.toggle();  //Close the modal
     }
 
@@ -94,10 +95,9 @@ export default class ItemModalAddSport extends Component {
                     isOpen = {this.state.modal}
                     toggle = {this.toggle}
                 >
-                    <ModalHeader toggle = {this.toggle}>Add a sport to the list</ModalHeader>
+                    <ModalHeader className="modalHeader" toggle = {this.toggle}>Add a sport</ModalHeader>
                     <ModalBody>
                         <form onSubmit={this.onSubmit}>
-                            <p>id : {this.props.id}</p>
                             <div className="form-group">
                                 <label>Sport: </label>
                                 <input type="text"

@@ -61,7 +61,7 @@ export default class ItemModalAddSleepingHours extends Component {
             console.log("error :" + error);
         });
         console.log(sleepingHours);
-        
+        window.location.reload();
         this.toggle();  //Close the modal
     }
 
@@ -76,7 +76,7 @@ export default class ItemModalAddSleepingHours extends Component {
                     isOpen = {this.state.modal}
                     toggle = {this.toggle}
                 >
-                    <ModalHeader toggle = {this.toggle}>Add your sleeping hours to the list</ModalHeader>
+                    <ModalHeader className="modalHeader" toggle = {this.toggle}>Add the number of hours you slept</ModalHeader>
                     <ModalBody>
                     <form onSubmit={this.onSubmit}>
                         
@@ -101,7 +101,7 @@ export default class ItemModalAddSleepingHours extends Component {
                     </div>
 
                     <div className="form-group">
-                        <Button type="submit" className ="btn btnprimary">Add a new exercice</Button>
+                        <Button type="submit" className ="btn btnprimary">Add</Button>
                     </div>
 
                 </form>      

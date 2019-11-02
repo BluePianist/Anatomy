@@ -4,7 +4,7 @@
     margin-right: 10px;
     margin-left: 10px;
     border-radius: 10px;
-    background-color: #FFFFFF;
+    background-color: #000000;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -16,6 +16,5 @@
     padding-right: 3px;
     padding-bottom: 5px;
     padding-left: 3px;
-    box-shadow: 10px 10px 5px grey;
     justify-content: center;
 }

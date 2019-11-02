@@ -10,7 +10,34 @@ export default class Chart extends Component {
         super(props);
         this.state = {
             chartData : this.props.chartData,
-            type: this.props.type
+            type: this.props.type,
+            options:{
+                maintainAspectRatio: false,
+                responsive: true,
+                title:{
+                    display : true , 
+                    text : this.props.title,
+                    fontSize : 25,
+                    fontColor: 'white',
+                    fontFamily: 'Lucida Console'
+                },
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels:{
+                        fontColor: 'white'
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                      scaleLabel: {
+                        display: true,
+                        labelString: this.props.x_axe,
+                        fontColor: 'white'
+                      }
+                    }]
+                  }
+            }
         }
     }
 
@@ -19,57 +46,21 @@ export default class Chart extends Component {
             return(
                 <Line
                 data={this.state.chartData}
-                options={{
-                    maintainAspectRatio: false,
-                    responsive: true,
-                    title:{
-                        display : true , 
-                        text : this.props.title,
-                        fontSize : 25
-                    },
-                    legend: {
-                        display: true,
-                        position: 'right'
-                    },
-                    scales: {
-                        yAxes: [{
-                          scaleLabel: {
-                            display: true,
-                            labelString: this.props.x_axe
-                          }
-                        }]
-                      }
-                }}
+                options={this.state.options}
                 />
             );
         }else if (this.state.type === 'b'){
             return(
                 <Bar
                     data={this.state.chartData}
-                    options={{
-                        maintainAspectRatio: true,
-                        responsive: true,
-                        title:{
-                            display : true , 
-                            text : this.props.title,
-                            fontSize : 25
-                        }
-                    }}
+                    options={this.state.options}
                 />
             );
         }else if(this.state.type === 'p'){
             return(
                 <Pie
                     data={this.state.chartData}
-                    options={{
-                        maintainAspectRatio: true,
-                        responsive: true,
-                        title:{
-                            display : true , 
-                            text : this.props.title,
-                            fontSize : 25
-                        }
-                    }}
+                    options={this.state.options}
                 />
             );
         }
