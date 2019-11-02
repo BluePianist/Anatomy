@@ -70,7 +70,7 @@
     margin-left: 70px;
     text-align: left;
 }
-.header{
+.headerDash{
     margin-top: 5vh;
     width: 60%;
     height: 7%;
@@ -82,11 +82,15 @@
     font-size: 20px;
 }
 
-.navbar{
+.navbar2{
+    font-family: "Quantum";
+    color: white;
     width: 100%;
+    display: flex;
     justify-content: flex-start; 
     background-color: black;
     height: 1%;
+    flex-direction: row;
 }
 
 .button{

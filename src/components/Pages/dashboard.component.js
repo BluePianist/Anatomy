@@ -88,7 +88,8 @@ export default class Dashboard extends Component{
                             {this.state.user} !
                         </div>
                 </div>
-                <div className ="navbar">
+                <div className ="navbar2">
+                    ANATOMY
                     <ItemModalAddSport id={this.state.id}/>
                     <ItemModalAddWeight id={this.state.id}/>
                     <ItemModalAddSleepingHours id={this.state.id}/>
@@ -98,7 +99,7 @@ export default class Dashboard extends Component{
                         <Description id={this.state.id}/>
                     </div>
                     <div className="content">
-                        <div className="header">
+                        <div className="headerDash">
                             Welcome to ANATOMY ! 
                         </div>
                         <WeightList id={this.state.id}/>
