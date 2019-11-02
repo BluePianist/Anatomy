@@ -28,7 +28,7 @@ export default class description extends Component{
             .catch((error) => {
                 console.log(error);
             })
-        },1000)
+        },500)
     }
 
    
@@ -36,7 +36,7 @@ export default class description extends Component{
     render(){
         return(
             <div >
-                <img className="pic" src={avatar}/>
+                <img className="pic" src={avatar} alt=""/>
                 <p className="descr"><br/>
                 <b>Name : </b>{this.state.user.Name} <br/>
                 <b>Email :</b> {this.state.user.Email} <br/>

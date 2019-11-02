@@ -25,7 +25,8 @@ export default class Dashboard extends Component{
         super(props);
         this.state = {
             id : '',
-            user:[] ,
+            userName:[],
+            userData:undefined,
             time: new Date().getSeconds(),
             lastTime:null,
             isOpen: true,
@@ -47,12 +48,12 @@ export default class Dashboard extends Component{
             
         setTimeout(()=>{
             this.setState({
-                user: Object.values(this.props.location.state),
+                userName: Object.values(this.props.location.state),
                 time: new Date().getSeconds(),
                 lastTime: this.state.time
             }) 
 
-            axios.get('http://localhost:5000/user_route/user/'+ this.state.user)
+            axios.get('http://localhost:5000/user_route/user/'+ this.state.userName)
             .then(response => {
                 if (response.data.length > 0) {
                     // console.log(response.data);
@@ -65,6 +66,18 @@ export default class Dashboard extends Component{
                 console.log("The username is not existent");
                 console.log(error);
             })
+            setTimeout(() => {
+                axios.get('http://localhost:5000/user_route/'+this.state.id)
+                .then(response =>{
+                    this.setState({
+                        userData : response.data
+                    })
+                    // console.log(response.data);
+                })
+                .catch((error) => {
+                    console.log(error);})
+                
+            }, 200);
         },200)  
     }
 
@@ -110,11 +123,11 @@ export default class Dashboard extends Component{
             this.modalToggle();
             console.log('updated');
         }).catch(e => console.log('error: '+e))
-        console.log(this.state.user);
+        console.log(this.state.userName);
     }
     get displayModal(){
-        // console.log(this.state.user);
-        if(this.state.user.weight === 0 || this.state.user.weight === undefined){
+        // console.log(this.state.userName);
+        if(this.state.userData && (this.state.userData.weight === 0 || this.state.userData.weight === undefined)){
             return (
                 <div className="modalContainer">
                     <Modal isOpen={this.state.isOpen} toggle={this.modalToggle}>
@@ -154,7 +167,7 @@ export default class Dashboard extends Component{
                     </Modal>
                 </div>
             )
-        }
+        } else return(<div></div>)
     }
     render() {
         return(
@@ -163,7 +176,7 @@ export default class Dashboard extends Component{
                         <div className="popupText">
                             Welcome Back 
                             <br/>
-                            {this.state.user} !
+                            {this.state.userName} !
                         </div>
                 </div>
                 <div className ="navbar2">
@@ -179,7 +192,7 @@ export default class Dashboard extends Component{
                     </div>
                     <div className="content">
                         <div className="headerDash">
-                            Hello {this.state.user}, you can see your daily evolution here.
+                            Hello {this.state.userName}, you can see your daily evolution here.
                         </div>
                         <WeightList id={this.state.id}/>
                         <SleepingHoursList id={this.state.id}/>
