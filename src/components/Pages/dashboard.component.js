@@ -104,11 +104,13 @@ export default class Dashboard extends Component{
             weight: this.state.weight,
             idealWeight: this.state.idealWeight,
         }
+        console.log(values);
         axios.put(url, values)
         .then(() => {
             this.modalToggle();
             console.log('updated');
         }).catch(e => console.log('error: '+e))
+        console.log(this.state.user);
     }
     get displayModal(){
         // console.log(this.state.user);
