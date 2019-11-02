@@ -40,9 +40,9 @@ export default class description extends Component{
                 <p className="descr"><br/>
                 <b>Name : </b>{this.state.user.Name} <br/>
                 <b>Email :</b> {this.state.user.Email} <br/>
-                <b>Height : </b><br/>
-                <b>Current weight : </b><br/>
-                <b>Ideal weight : </b><br/>
+                <b>Height :</b> {this.state.user.height}<br/>
+                <b>Current weight : </b> {this.state.user.weight}<br/>
+                <b>Ideal weight :</b> {this.state.user.idealWeight}<br/>
                 </p>
             </div>
         );
