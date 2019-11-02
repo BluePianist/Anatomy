@@ -68,9 +68,9 @@ export default class ItemModalAddWeight extends Component {
     render(){
         return(
             <div>
-                <Button 
+                <button className="button"
                     onClick={this.toggle}
-                >Add Weight</Button>
+                >Add Weight</button>
 
                 <Modal className="Modal"
                     isOpen = {this.state.modal}

@@ -86,9 +86,9 @@ export default class ItemModalAddSport extends Component {
     render(){
         return(
             <div>
-                <Button
+                <button className="button"
                     onClick={this.toggle}
-                >Add Sport</Button>
+                >Add Sport</button>
 
                 <Modal 
                     isOpen = {this.state.modal}

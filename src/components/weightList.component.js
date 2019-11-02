@@ -39,7 +39,7 @@ export default class weightList extends Component {
                 tab.push(currentweight.weight);
             })
             this.state.chartData.labels.sort();
-            this.state.chartData.datasets.push({label:'Weight',data : tab});
+            this.state.chartData.datasets.push({label:'Weight',data : tab, borderColor: "#6FD1CF",fill: false});
 
         },1400)
 
@@ -48,7 +48,7 @@ export default class weightList extends Component {
     render(){
         return(
             <div>
-                <Chart chartData={this.state.chartData} type="l" title="Your weight evolution"/>
+                <Chart chartData={this.state.chartData} type="l" title="Your weight evolution" x_axe ='weight'/>
             </div>
         );
     }

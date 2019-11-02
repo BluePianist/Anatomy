@@ -31,7 +31,7 @@ router.route('/add').post(async function (req, res) {
         Name : req.body.Name,
         Email : req.body.Email.toLowerCase(),
         Password : req.body.Password,
-        height : 0,
+        height : '',
         sportsList : [],
         weight_evolution : [],
         sleepingHours:[] 

@@ -68,9 +68,9 @@ export default class ItemModalAddSleepingHours extends Component {
     render(){
         return(
             <div>
-                <Button
+                <button className="button"
                     onClick={this.toggle}
-                >Add Sleeping Hours</Button>
+                >Add Sleeping Hours</button>
 
                 <Modal 
                     isOpen = {this.state.modal}

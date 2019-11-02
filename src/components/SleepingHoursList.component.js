@@ -37,7 +37,7 @@ export default class sleepingHoursList extends Component {
                 tab.push(currentSleepingHour.hours);
             })
             this.state.chartData.labels.sort();
-            this.state.chartData.datasets.push({label:'Sleeping Hours',data : tab});
+            this.state.chartData.datasets.push({label:'Sleeping Hours',data : tab, borderColor: "#6FD1CF",fill: false});
         },1400)
 
     }
@@ -45,7 +45,7 @@ export default class sleepingHoursList extends Component {
     render(){
         return(
             <div>
-                <Chart chartData={this.state.chartData} type="l" title="Your sleeping hours evolution"/>
+                <Chart chartData={this.state.chartData} type="l" title="Your sleeping hours evolution" x_axe ='sleeping hours'/>
             </div>
         );
     }

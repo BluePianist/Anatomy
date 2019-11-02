@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-// import { BrowserRouter as Router} from 'react-router-dom';
 import axios from 'axios';
 import "react-datepicker/dist/react-datepicker.css";
 import './dashboard.css';
@@ -11,7 +10,8 @@ import ItemModalAddWeight from "../ItemModalAddWeight";
 import ItemModalAddSleepingHours from "../ItemModalAddSleepingHours";
 import ExerciceList from "../exerciceList.component"; 
 import WeightList from "../weightList.component";
-import SleepingHoursList from "../SleepingHoursList.component"
+import SleepingHoursList from "../SleepingHoursList.component";
+import Description from "../description.component"
 
 export default class Dashboard extends Component{
 
@@ -80,24 +80,42 @@ export default class Dashboard extends Component{
 
     render() {
         return(
-            <div className="dashboardContainer" id="dashboardContainer">
+            <div>
                 <div className="popup" id="popup">
-                    <div className="popupText">
-                        Welcome Back 
-                        <br/>
-                        {this.state.user} !
-                    </div>
+                        <div className="popupText">
+                            Welcome Back 
+                            <br/>
+                            {this.state.user} !
+                        </div>
                 </div>
-                {/* <p>Hello {this.state.user}, you are in the Dashboard Page</p> */}
-                <ItemModalAddSport id={this.state.id}/>
-                <ItemModalAddWeight id={this.state.id}/>
-                <ItemModalAddSleepingHours id={this.state.id}/>
-                <div className="Chart">
-                    <WeightList id={this.state.id}/>
-                    <SleepingHoursList id={this.state.id}/>
-                    <ExerciceList id={this.state.id}/>
+                <div className ="navbar">
+                    <ItemModalAddSport id={this.state.id}/>
+                    <ItemModalAddWeight id={this.state.id}/>
+                    <ItemModalAddSleepingHours id={this.state.id}/>
+                </div>
+                <div className="dashboardContainer" id="dashboardContainer">
+                    <div className="box">
+                        <Description id={this.state.id}/>
+                    </div>
+                    <div className="content">
+                        <div className="header">
+                            Welcome to ANATOMY ! 
+                        </div>
+                        <WeightList id={this.state.id}/>
+                        <SleepingHoursList id={this.state.id}/>
+                        <ExerciceList id={this.state.id}/>
+                    </div>
                 </div>
             </div>
         )
     }
 }
+
+{/* <ItemModalAddSport id={this.state.id}/>
+                <ItemModalAddWeight id={this.state.id}/>
+                <ItemModalAddSleepingHours id={this.state.id}/>
+                <div className="Chart">
+                    <WeightList id={this.state.id}/>
+                    <SlepingHoursList id={this.state.id}/>
+                    <ExerciceList id={this.state.id}/>
+            </div> */}

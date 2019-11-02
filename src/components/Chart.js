@@ -26,7 +26,19 @@ export default class Chart extends Component {
                         display : true , 
                         text : this.props.title,
                         fontSize : 25
-                    }
+                    },
+                    legend: {
+                        display: true,
+                        position: 'right'
+                    },
+                    scales: {
+                        yAxes: [{
+                          scaleLabel: {
+                            display: true,
+                            labelString: this.props.x_axe
+                          }
+                        }]
+                      }
                 }}
                 />
             );
@@ -35,7 +47,7 @@ export default class Chart extends Component {
                 <Bar
                     data={this.state.chartData}
                     options={{
-                        maintainAspectRatio: false,
+                        maintainAspectRatio: true,
                         responsive: true,
                         title:{
                             display : true , 
@@ -50,7 +62,7 @@ export default class Chart extends Component {
                 <Pie
                     data={this.state.chartData}
                     options={{
-                        maintainAspectRatio: false,
+                        maintainAspectRatio: true,
                         responsive: true,
                         title:{
                             display : true , 
