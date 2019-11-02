@@ -28,7 +28,7 @@ export default class description extends Component{
             .catch((error) => {
                 console.log(error);
             })
-        },500)
+        },1000)
     }
 
    
