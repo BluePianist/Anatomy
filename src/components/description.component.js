@@ -23,7 +23,7 @@ export default class description extends Component{
                 this.setState({
                     user : response.data
                 })
-                console.log(response.data);
+                // console.log(response.data);
             })
             .catch((error) => {
                 console.log(error);
@@ -40,9 +40,9 @@ export default class description extends Component{
                 <p className="descr"><br/>
                 <b>Name : </b>{this.state.user.Name} <br/>
                 <b>Email :</b> {this.state.user.Email} <br/>
-                <b>Height : </b><br/>
-                <b>Current weight : </b><br/>
-                <b>Ideal weight : </b><br/>
+                <b>Height : {this.state.user.height}</b><br/>
+                <b>Current weight : {this.state.user.weight}</b><br/>
+                <b>Ideal weight : {this.state.user.idealWeight}</b><br/>
                 </p>
             </div>
         );

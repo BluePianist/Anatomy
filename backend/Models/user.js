@@ -25,6 +25,14 @@ const userSchema = new Schema({
         type: Number,
         required: true
     },
+    weight:{
+        type: Number,
+        required: true
+    },
+    idealWeight:{
+        type: Number,
+        required: true
+    },
     sportsList: [{
         sport_name: {
             type: String

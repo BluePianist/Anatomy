@@ -32,6 +32,7 @@ export default class Dashboard extends Component{
             height:'',
             weight:'',
             idealWeight:'',
+            needInfo: undefined,
         }
         this.modalToggle = this.modalToggle.bind(this)
         this.onChange = this.onChange.bind(this)
@@ -109,6 +110,50 @@ export default class Dashboard extends Component{
             console.log('updated');
         }).catch(e => console.log('error: '+e))
     }
+    get displayModal(){
+        // console.log(this.state.user);
+        if(this.state.user.weight === 0 || this.state.user.weight === undefined){
+            return (
+                <div className="modalContainer">
+                    <Modal isOpen={this.state.isOpen} toggle={this.modalToggle}>
+                        <ModalHeader toggle={this.modalToggle}>We need a couple information to begin</ModalHeader>
+                        <ModalBody>
+                            <form onSubmit={this.onSubmit}>
+                                <label>Please give us your height in cm</label> <br/>
+                                <input type="text"
+                                required
+                                name="height"
+                                className ="inputHeight"
+                                placeholder="Ex: 190"
+                                value= {this.state.height}
+                                onChange={this.onChange}
+                                /> <br/>
+                                <label>Please give us your current weight in kg</label> <br/>
+                                <input type="text"
+                                required
+                                name="weight"
+                                className ="inputCurrentWeight"
+                                placeholder="Ex: 80"
+                                value= {this.state.weight}
+                                onChange={this.onChange}
+                                /> <br/>
+                                <label >Please give us your ideal weight in kg</label> <br/>
+                                <input type="text"
+                                required
+                                name="idealWeight"
+                                className ="inputIdealWeight"
+                                placeholder="Ex: 90"
+                                value= {this.state.idealWeight}
+                                onChange={this.onChange}
+                                /><br/><br/>
+                                <Button type="submit" className ="btn btnprimary">submit</Button>
+                            </form>
+                        </ModalBody>
+                    </Modal>
+                </div>
+            )
+        }
+    }
     render() {
         return(
             <div>
@@ -125,43 +170,7 @@ export default class Dashboard extends Component{
                     <ItemModalAddWeight id={this.state.id}/>
                     <ItemModalAddSleepingHours id={this.state.id}/>
                 </div>
-                <div className="modalContainer">
-                    <Modal isOpen={this.state.isOpen} toggle={this.modalToggle}>
-                        <ModalHeader toggle={this.modalToggle}>We need a couple information to begin</ModalHeader>
-                        <ModalBody>
-                            <form onSubmit={this.onSubmit}>
-                                <label>Please give us your height in cm</label> <br/>
-                                <input type="text"
-                                required
-                                name="height"
-                                className ="inputHeight"
-                                placeholder="Ex: 190"
-                                value= {this.state.height}
-                                onChange={this.onChange}
-                                />
-                                <label>Please give us your current weight in kg</label>
-                                <input type="text"
-                                required
-                                name="weight"
-                                className ="inputCurrentWeight"
-                                placeholder="Ex: 80"
-                                value= {this.state.weight}
-                                onChange={this.onChange}
-                                />
-                                <label >Please give us your ideal weight in kg</label>
-                                <input type="text"
-                                required
-                                name="idealWeight"
-                                className ="inputIdealWeight"
-                                placeholder="Ex: 90"
-                                value= {this.state.idealWeight}
-                                onChange={this.onChange}
-                                /><br/><br/>
-                                <Button type="submit" className ="btn btnprimary">submit</Button>
-                            </form>
-                        </ModalBody>
-                    </Modal>
-                </div>
+                {this.displayModal}
                 <div className="dashboardContainer" id="dashboardContainer">
                     <div className="box">
                         <Description id={this.state.id}/>
