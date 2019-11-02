@@ -10,7 +10,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import './dashboard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+import ModalAddInformations from "../modalAccueil.component"
 import ItemModalAddSport from "../ItemModalAddSport";
 import ItemModalAddWeight from "../ItemModalAddWeight";
 import ItemModalAddSleepingHours from "../ItemModalAddSleepingHours";
@@ -31,13 +31,9 @@ export default class Dashboard extends Component{
             lastTime:null,
             isOpen: true,
             height:'',
-            weight:'',
             idealWeight:'',
             needInfo: undefined,
         }
-        this.modalToggle = this.modalToggle.bind(this)
-        this.onChange = this.onChange.bind(this)
-        this.onSubmit = this.onSubmit.bind(this)
     }
 
     componentDidMount(){ 
@@ -101,7 +97,7 @@ export default class Dashboard extends Component{
         // console.log(this.state.time);
         // console.log(this.state.lastTime);
     }
-    modalToggle(){
+    modalToggle = () => {
         this.setState({isOpen: !this.state.isOpen})
     }
     onChange = e => {
@@ -114,7 +110,6 @@ export default class Dashboard extends Component{
         const url = 'http://localhost:5000/user_route/update/'+this.state.id;
         const values = {
             height: this.state.height,
-            weight: this.state.weight,
             idealWeight: this.state.idealWeight,
         }
         console.log(values);
@@ -125,6 +120,7 @@ export default class Dashboard extends Component{
         }).catch(e => console.log('error: '+e))
         console.log(this.state.userName);
     }
+
     get displayModal(){
         // console.log(this.state.userName);
         if(this.state.userData && (this.state.userData.weight === 0 || this.state.userData.weight === undefined)){
@@ -141,15 +137,6 @@ export default class Dashboard extends Component{
                                 className ="inputHeight"
                                 placeholder="Ex: 190"
                                 value= {this.state.height}
-                                onChange={this.onChange}
-                                /> <br/>
-                                <label>Please give us your current weight in kg</label> <br/>
-                                <input type="text"
-                                required
-                                name="weight"
-                                className ="inputCurrentWeight"
-                                placeholder="Ex: 80"
-                                value= {this.state.weight}
                                 onChange={this.onChange}
                                 /> <br/>
                                 <label >Please give us your ideal weight in kg</label> <br/>
@@ -184,6 +171,7 @@ export default class Dashboard extends Component{
                     <ItemModalAddSport id={this.state.id}/>
                     <ItemModalAddWeight id={this.state.id}/>
                     <ItemModalAddSleepingHours id={this.state.id}/>
+                    <ModalAddInformations id={this.state.id} isOpen={false}/>
                 </div>
                 {this.displayModal}
                 <div className="dashboardContainer" id="dashboardContainer">

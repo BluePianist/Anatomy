@@ -29,7 +29,7 @@ export default class description extends Component{
             .catch((error) => {
                 console.log(error);
             })
-        },500)
+        },1000)
     }
     
     render(){
@@ -39,9 +39,9 @@ export default class description extends Component{
                 <p className="descr"><br/>
                 <b>Name : </b>{this.state.user.Name} <br/>
                 <b>Email :</b> {this.state.user.Email} <br/>
-                <b>Height :</b> {this.state.user.height}<br/>
-                <b>Current weight : </b> {this.state.weight}<br/>
-                <b>Ideal weight :</b> {this.state.user.idealWeight}<br/>
+                <b>Height :</b> {this.state.user.height} cm<br/>
+                <b>Current weight : </b> {this.state.weight} kg<br/>
+                <b>Ideal weight :</b> {this.state.user.idealWeight} kg<br/>
                 </p>
             </div>
         );

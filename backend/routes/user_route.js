@@ -94,7 +94,6 @@ router.route('/update/:id').put((req,res)=>{
     .then(user=>{
         // user.username = req.body.username;
         user.height = Number(req.body.height);
-        user.weight = Number(req.body.weight);
         user.idealWeight = Number(req.body.idealWeight);
   
         user.save()
