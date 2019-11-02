@@ -119,6 +119,7 @@ export default class Dashboard extends Component{
             console.log('updated');
         }).catch(e => console.log('error: '+e))
         console.log(this.state.userName);
+        window.location.reload();
     }
 
     get displayModal(){

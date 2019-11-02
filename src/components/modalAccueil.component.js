@@ -53,6 +53,7 @@ export default class ModalAddInformations extends Component {
             console.log('updated');
         }).catch(e => console.log('error: '+e))
         console.log(this.state.user);
+        window.location.reload();
     }
 
 
