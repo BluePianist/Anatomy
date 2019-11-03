@@ -17,6 +17,9 @@ npm start
 
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
+
+![Alt text](src/components/Pages/Sport/Anatomy.gif?raw=true "Title")
+
 ## App Info
 
 ### Authors
