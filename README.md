@@ -17,7 +17,7 @@ npm start
 
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
-<img id="screenshot" src="src/components/Pages/Sport/Anatomy.gif" height="30%" width="30%">
+<img id="screenshot" src="/src/components/Pages/Sport/Anatomy.gif" height="30%" width="60%">
 
 ## App Info
 
