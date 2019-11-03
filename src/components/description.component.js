@@ -1,12 +1,8 @@
 import React, {Component} from 'react'; 
+import Card from 'react-bootstrap/Card';
 // import {Link,Switch,  BrowserRouter as Router, Route} from 'react-router-dom';
 import axios from 'axios'; 
-
 import avatar from "./Pages/Sport/User_Avatar.png";
-
-
-
-
 
 export default class description extends Component{
     constructor(props){
@@ -34,7 +30,7 @@ export default class description extends Component{
     
     render(){
         return(
-            <div >
+            <div className="headerCard">
                 <img className="pic" src={avatar} alt=""/>
                 <p className="descr"><br/>
                 <b>Name : </b>{this.state.user.Name} <br/>
@@ -44,6 +40,7 @@ export default class description extends Component{
                 <b>Ideal weight :</b> {this.state.user.idealWeight} kg<br/>
                 </p>
             </div>
+            
         );
     }
 }

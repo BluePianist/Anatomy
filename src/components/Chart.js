@@ -19,7 +19,7 @@ export default class Chart extends Component {
                     text : this.props.title,
                     fontSize : 25,
                     fontColor: 'white',
-                    fontFamily: 'Lucida Console'
+                    fontFamily: 'Andale Mono'
                 },
                 legend: {
                     display: true,

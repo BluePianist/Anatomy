@@ -183,11 +183,13 @@ export default class Dashboard extends Component{
                         <Description id={this.state.id}/>
                     </div>
                     <div className="content">
-                        <div className="headerDash">
-                            Hello {this.state.userName}, you can see your daily evolution here.
+                        <div className="headerText">
+                            Keep track of your body performance
                         </div>
+                        <div className="two_dash">
                         <WeightList id={this.state.id}/>
                         <SleepingHoursList id={this.state.id}/>
+                        </div>
                         <ExerciceList id={this.state.id}/>
                     </div>
                 </div>
