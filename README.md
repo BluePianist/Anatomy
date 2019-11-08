@@ -5,8 +5,8 @@ This is a project using the following technologies:
 - React JS for the frontend
 - Express, MongoDB Atlas and Node.js for the backend
 
+Install dependencies for server
 ```bash
-# Install dependencies for server
 npm install
 
 # Run the server (in the backend file :\Anatomy\backend)
