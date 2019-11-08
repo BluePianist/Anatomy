@@ -1,5 +1,4 @@
-import React, {Component} from 'react'; 
-import Card from 'react-bootstrap/Card';
+import React, {Component} from 'react';
 // import {Link,Switch,  BrowserRouter as Router, Route} from 'react-router-dom';
 import axios from 'axios'; 
 import avatar from "./Pages/Sport/User_Avatar.png";

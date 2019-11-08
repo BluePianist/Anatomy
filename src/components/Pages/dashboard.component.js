@@ -123,7 +123,7 @@ export default class Dashboard extends Component{
     }
 
     get displayModal(){
-        // console.log(this.state.userName);
+        return(
         setTimeout(() => {
             if(this.state.userData && (this.state.userData.weight === 0 || this.state.userData.weight === undefined)){
                 return (
@@ -157,7 +157,8 @@ export default class Dashboard extends Component{
                     </div>
                 );
             }
-        }, 1000);
+        }, 1000)
+        )
     }
 
     render() {
