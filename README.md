@@ -6,15 +6,15 @@ This is a project using the following technologies:
 - Express, MongoDB Atlas and Node.js for the backend
 
 
-Install dependencies for server
+**Install dependencies for server**
 ```bash
 npm install
 ```
-Run the server (in the backend file :\Anatomy\backend)
+**Run the server (in the backend file :\Anatomy\backend)**
 ```bash
 nodemon server
 ```
-Run the React client (in the project file :\Anatomy)
+**Run the React client (in the project file :\Anatomy)**
 ```bash
 npm start
 ```
