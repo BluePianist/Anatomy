@@ -19,7 +19,7 @@ nodemon server
 ```
 npm start
 ```
-**Run the web app (client + server)**
+**Run the web app (client + server) (in the project file :\Anatomy)**
 ```
 npm run dev
 ```
