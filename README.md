@@ -21,8 +21,7 @@ bash npm start
 ```
 Server runs on http://localhost:5000 and client on http://localhost:3000
 <br><br>
-## Visualisation of the website
-
+## Demo
 ### Home page
 <img id="screenshot" src="/src/components/Pages/Sport/anatomy.gif">
 <br><br>
