@@ -4,7 +4,6 @@
 This is a project using the following technologies:
 - React JS for the frontend
 - Express, MongoDB Atlas and Node.js for the backend
-
 <br><br>
 ## Installation
 
@@ -27,6 +26,7 @@ Server runs on http://localhost:5000 and client on http://localhost:3000
 ### Home page
 <img id="screenshot" src="/src/components/Pages/Sport/anatomy.gif">
 <br><br>
+
 ## Web App Info
 
 ### Authors
