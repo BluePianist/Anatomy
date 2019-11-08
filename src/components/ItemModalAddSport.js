@@ -95,7 +95,7 @@ export default class ItemModalAddSport extends Component {
                     isOpen = {this.state.modal}
                     toggle = {this.toggle}
                 >
-                    <ModalHeader className="modalHeader" toggle = {this.toggle}>Add a sport</ModalHeader>
+                    <ModalHeader toggle = {this.toggle}>Add a sport</ModalHeader>
                     <ModalBody>
                         <form onSubmit={this.onSubmit}>
                             <div className="form-group">
@@ -109,7 +109,7 @@ export default class ItemModalAddSport extends Component {
                             </div>
         
                             <div className="form-group">
-                                <label>Duration: </label>
+                                <label>Duration: (min)</label>
                                 <input type="text"
                                     required
                                     className ="form-control"
@@ -119,7 +119,7 @@ export default class ItemModalAddSport extends Component {
                             </div>
         
                             <div className="form-group">
-                                <label>Burnt calories: </label>
+                                <label>Burnt calories: (kcal) </label>
                                 <input type="text"
                                     required
                                     className ="form-control"

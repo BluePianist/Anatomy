@@ -122,8 +122,7 @@ export default class Dashboard extends Component{
         window.location.reload();
     }
 
-    get displayModal(){
-        return(
+    get displayModal () {
         setTimeout(() => {
             if(this.state.userData && (this.state.userData.weight === 0 || this.state.userData.weight === undefined)){
                 return (
@@ -158,7 +157,6 @@ export default class Dashboard extends Component{
                 );
             }
         }, 1000)
-        )
     }
 
     render() {

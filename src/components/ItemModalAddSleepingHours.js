@@ -76,12 +76,12 @@ export default class ItemModalAddSleepingHours extends Component {
                     isOpen = {this.state.modal}
                     toggle = {this.toggle}
                 >
-                    <ModalHeader className="modalHeader" toggle = {this.toggle}>Add the number of hours you slept</ModalHeader>
+                    <ModalHeader toggle = {this.toggle}>Add the number of hours you slept</ModalHeader>
                     <ModalBody>
                     <form onSubmit={this.onSubmit}>
                         
                     <div className="form-group">
-                        <label>Sleeping Hours: </label>
+                        <label>Sleeping Hours: (hours)</label>
                         <input type="text"
                             required
                             className ="form-control"

@@ -59,6 +59,7 @@ tr{
 .tabTitle{
     font-size: 0.8em;
     flex-direction: row;
+    font-family: Andale Mono;
 }
 .box{
     padding-top: 50px;
@@ -66,7 +67,7 @@ tr{
     width: 25%;
     height: 100%;
     font-size: 0.4em;
-    border: solid;
+    box-shadow: 10px 5px 5px red;
 }
 
 .content{
@@ -85,6 +86,7 @@ tr{
     /* margin-left: 70px; */
     text-align: left;
     font-family: 'Andale Mono';
+    color : #000000;
 }
 .headerDash{
     margin-top: 5vh;
@@ -107,11 +109,12 @@ tr{
     background-color: black;
     height: 1%;
     flex-direction: row;
-    font-family: monospace;
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .button{
-    border:none
+    border:none;
+    font-size: 13px;
 }
 
 .log_tit{
@@ -119,11 +122,6 @@ tr{
     font-size: 30px;
     margin-left: 30px;
     margin-right: 60px;
-}
-
-.modalHeader{
-    font-family: "Quantum";
-    font-size: 80px;
 }
 
 .headerText{
@@ -139,11 +137,13 @@ tr{
     padding-right: 2vh;
     padding-top: 5vh ;
     padding-bottom: 5vh;
-    /* width: 40vh; */
+    border-radius: 20px;
     border: solid;
-    /* background-color: #000000; */
+    background-color: #FFFFFF;
     color: #FFFFFF;
     display: inline-block;
     flex-direction: column;
+    /* border : solid #333333; */
+    box-shadow: 11px 11px 20px 1px  #111111;
     
 }

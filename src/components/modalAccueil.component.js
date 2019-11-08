@@ -64,7 +64,7 @@ export default class ModalAddInformations extends Component {
                     onClick={this.modalToggle}
                 >Update your informations</button>
                     <Modal isOpen={this.state.isOpen} toggle={this.modalToggle}>
-                        <ModalHeader toggle={this.modalToggle}>We need a couple information to begin</ModalHeader>
+                        <ModalHeader toggle={this.modalToggle}>Update your informations</ModalHeader>
                         <ModalBody>
                             <form onSubmit={this.onSubmit}>
                                 <label>Please give us your height in cm</label> <br/>
