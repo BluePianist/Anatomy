@@ -6,6 +6,7 @@ This is a project using the following technologies:
 - Express, MongoDB Atlas and Node.js for the backend
 
 Install dependencies for server
+
 ```bash
 npm install
 
