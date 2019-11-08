@@ -9,15 +9,19 @@ This is a project using the following technologies:
 
 **Install dependencies for server**
 ```
-bash npm install
+npm install
 ```
 **Run the server (in the backend file :\Anatomy\backend)**
 ```
-bash nodemon server
+nodemon server
 ```
 **Run the React client (in the project file :\Anatomy)**
 ```
-bash npm start
+npm start
+```
+**Run the web app (client + server)**
+```
+npm run dev
 ```
 Server runs on http://localhost:5000 and client on http://localhost:3000
 <br><br>
