@@ -66,6 +66,7 @@ tr{
     width: 25%;
     height: 100%;
     font-size: 0.4em;
+    border: solid;
 }
 
 .content{
@@ -73,7 +74,7 @@ tr{
     color : #FFFFFF;
     width: 75%;
     height: 100%;
-    border-radius: 40px 0px 0px 40px;
+    /* border-radius: 40px 0px 0px 40px; */
 }
 
 .pic{
@@ -81,8 +82,9 @@ tr{
     height: 60%;
 }
 .descr{
-    margin-left: 70px;
+    /* margin-left: 70px; */
     text-align: left;
+    font-family: 'Andale Mono';
 }
 .headerDash{
     margin-top: 5vh;
@@ -122,4 +124,26 @@ tr{
 .modalHeader{
     font-family: "Quantum";
     font-size: 80px;
+}
+
+.headerText{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-family: 'Quantum';
+}
+
+.headerCard{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 5vh ;
+    padding-bottom: 5vh;
+    /* width: 40vh; */
+    border: solid;
+    /* background-color: #000000; */
+    color: #FFFFFF;
+    display: inline-block;
+    flex-direction: column;
+    
 }
