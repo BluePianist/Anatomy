@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import { Bar, Line, Pie} from 'react-chartjs-2';
 // import {render} from 'react-dom';
-import './Chart.css'
-
-/* <Chart /> */
+import './CSS/Chart.css'
 
 export default class Chart extends Component {
     constructor(props){

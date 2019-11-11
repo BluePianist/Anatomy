@@ -1,0 +1,21 @@
+.tableau{
+    width: 97%;
+    margin:auto;
+    font-size: 0.35em;
+}
+
+tr{
+    color: #FFFFFF;
+}
+.tab{
+    background-color : #000000;
+    width : 60%;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.tabTitle{
+    font-size: 0.8em;
+    flex-direction: row;
+    font-family: Andale Mono;
+}

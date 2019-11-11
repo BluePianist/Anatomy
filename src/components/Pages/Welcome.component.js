@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
 import forms from './forms.component'
-import Navbar from '../Navbar.component'
+import Navbar from './dashboardComponent/Navbar.component'
 import './Welcome.css'
 import axios from 'axios'
 

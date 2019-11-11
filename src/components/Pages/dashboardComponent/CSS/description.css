@@ -1,0 +1,28 @@
+.headerCard{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 5vh ;
+    padding-bottom: 5vh;
+    border-radius: 20px;
+    border: solid;
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    display: inline-block;
+    flex-direction: column;
+    /* border : solid #333333; */
+    box-shadow: 11px 11px 20px 1px  #111111;
+    
+}
+
+.pic{
+    width: 60%;
+    height: 60%;
+}
+.descr{
+    /* margin-left: 70px; */
+    text-align: left;
+    font-family: 'Andale Mono';
+    color : #000000;
+}

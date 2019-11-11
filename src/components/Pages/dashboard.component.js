@@ -10,14 +10,14 @@ import "react-datepicker/dist/react-datepicker.css";
 import './dashboard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import ModalAddInformations from "../modalAccueil.component"
-import ItemModalAddSport from "../ItemModalAddSport";
-import ItemModalAddWeight from "../ItemModalAddWeight";
-import ItemModalAddSleepingHours from "../ItemModalAddSleepingHours";
-import ExerciceList from "../exerciceList.component"; 
-import WeightList from "../weightList.component";
-import SleepingHoursList from "../SleepingHoursList.component";
-import Description from "../description.component"
+import ModalAddInformations from "./dashboardComponent/modalAccueil.component"
+import ItemModalAddSport from "./dashboardComponent/ItemModalAddSport";
+import ItemModalAddWeight from "./dashboardComponent/ItemModalAddWeight";
+import ItemModalAddSleepingHours from "./dashboardComponent/ItemModalAddSleepingHours";
+import ExerciceList from "./dashboardComponent/exerciceList.component"; 
+import WeightList from "./dashboardComponent/weightList.component";
+import SleepingHoursList from "./dashboardComponent/SleepingHoursList.component";
+import Description from "./dashboardComponent/description.component"
 
 export default class Dashboard extends Component{
 

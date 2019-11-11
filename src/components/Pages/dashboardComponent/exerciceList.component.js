@@ -1,6 +1,7 @@
 import React, {Component} from 'react'; 
 // import {Link,Switch,  BrowserRouter as Router, Route} from 'react-router-dom';
 import axios from 'axios'; 
+import './CSS/exerciceList.css'
 
 const Exercice = props => (
     <tr>
@@ -48,7 +49,7 @@ export default class exerciceList extends Component{
                 <h3 className="tabTitle">Exercices List</h3>
                 <div className="tableau">
                     <table className="table">
-                            <thead className="header-tab">
+                            <thead>
                                     <tr>
                                         <th>Sport</th>
                                         <th>Duration</th>
