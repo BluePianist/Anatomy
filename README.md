@@ -1,12 +1,11 @@
 # ANATOMY - Sport App
-> Our first React js Website. By [LOPEZE Douglas](https://github.com/BluePianist) - [APPUDURAI Thivya](https://github.com/ThivyaApp)
+> Our first React js Website. By [LOPEZE Douglas](https://github.com/BluePianist) and [APPUDURAI Thivya](https://github.com/ThivyaApp)
 <br>
-Sport app built with the MERN stack.
-<br>This is a project using the following technologies:
-<br>
+Sport app built with the MERN stack.<br>
+This is a project using the following technologies:
 * React JS for the frontend
 * Express, MongoDB Atlas and Node.js for the backend
-<br><br>
+
 ## Installation
 
 **Install dependencies for server**
