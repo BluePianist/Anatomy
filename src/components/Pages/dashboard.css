@@ -1,6 +1,6 @@
 .dashboardContainer{
     width: 101vw;
-    height: 200vh;
+    height: 220vh;
     text-align: center;
     font-size: 3em;
     display: inline-flex;
@@ -67,7 +67,6 @@ tr{
     width: 25%;
     height: 100%;
     font-size: 0.4em;
-    box-shadow: 10px 5px 5px red;
 }
 
 .content{
