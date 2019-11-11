@@ -3,8 +3,9 @@
 <br>
 Sport app built with the MERN stack.
 <br>This is a project using the following technologies:
-- React JS for the frontend
-- Express, MongoDB Atlas and Node.js for the backend
+<br>
+* React JS for the frontend
+* Express, MongoDB Atlas and Node.js for the backend
 <br><br>
 ## Installation
 
