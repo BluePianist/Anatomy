@@ -1,7 +1,6 @@
 # ANATOMY - Keep track of your body performance
->By [LOPEZE Douglas](https://github.com/BluePianist) and [APPUDURAI Thivya](https://github.com/ThivyaApp)
+>Web application built with the MERN stack. By [LOPEZE Douglas](https://github.com/BluePianist) and [APPUDURAI Thivya](https://github.com/ThivyaApp)
 <br>
-Web application built with the MERN stack.<br>
 This is a project using the following technologies:
 
 * React JS for the frontend
