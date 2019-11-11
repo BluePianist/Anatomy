@@ -44,15 +44,16 @@ The first widget is a Card with your personnal data like your name, your current
   
 The second widget is a line chart of your weight evolution according to the date.
 
-<img id="screenshot" src="/src/components/Pages/Sport/weight_evolution.png" height="25%" width="25%"> 
+<img id="screenshot" src="/src/components/Pages/Sport/weight_evolution.png" height="50%" width="50%"> 
 
 The third widget is a line chart of your sleeping hours evolution according to the date.
 
-<img id="screenshot" src="/src/components/Pages/Sport/sleeping_hours.png" height="25%" width="25%"> 
+<img id="screenshot" src="/src/components/Pages/Sport/sleeping_hours.png" height="50%" width="50%"> 
 
 Finally, the fourth widget is a table of all the exercises that you wish to do.
 You can add the name of the exercise, the duration (in minutes), the calories that you will burn and a date.
-<img id="screenshot" src="/src/components/Pages/Sport/exercices_list.png" height="25%" width="25%"> 
+
+<img id="screenshot" src="/src/components/Pages/Sport/exercices_list.png" height="50%" width="50%"> 
 <br><br>
 
 ## Information
