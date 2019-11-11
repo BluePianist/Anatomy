@@ -3,6 +3,7 @@
 <br>
 Sport app built with the MERN stack.<br>
 This is a project using the following technologies:
+
 * React JS for the frontend
 * Express, MongoDB Atlas and Node.js for the backend
 
@@ -43,16 +44,19 @@ The first widget is a Card with your personnal data like your name, your current
 
 <img id="screenshot" src="/src/components/Pages/Sport/card.png" height="25%" width="25%"> 
 <br>
+
 **2nd Widget** <br>
 The second widget is a line chart of your weight evolution according to the date.
 
 <img id="screenshot" src="/src/components/Pages/Sport/weight_evolution.png" height="65%" width="65%"> 
 <br>
+
 **3rd Widget** <br>
 The third widget is a line chart of your sleeping hours evolution according to the date.
 
 <img id="screenshot" src="/src/components/Pages/Sport/sleeping_hours.png" height="65%" width="65%"> 
 <br>
+
 **4th Widget** <br>
 Finally, the fourth widget is a table of all the exercises that you wish to do.
 You can add the name of the exercise, the duration (in minutes), the calories that you will burn and a date.
