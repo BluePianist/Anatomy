@@ -17,7 +17,7 @@ import ItemModalAddSleepingHours from "./dashboardComponent/ItemModalAddSleeping
 import ExerciceList from "./dashboardComponent/exerciceList.component"; 
 import WeightList from "./dashboardComponent/weightList.component";
 import SleepingHoursList from "./dashboardComponent/SleepingHoursList.component";
-import Description from "./dashboardComponent/description.component"
+import Description from "./dashboardComponent/description.component";
 
 export default class Dashboard extends Component{
 
@@ -175,6 +175,8 @@ export default class Dashboard extends Component{
                     <ItemModalAddWeight id={this.state.id}/>
                     <ItemModalAddSleepingHours id={this.state.id}/>
                     <ModalAddInformations id={this.state.id} isOpen={false}/>
+                    
+                    
                 </div>
                 {this.displayModal}
                 <div className="dashboardContainer" id="dashboardContainer">

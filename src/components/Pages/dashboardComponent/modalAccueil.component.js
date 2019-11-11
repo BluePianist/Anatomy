@@ -17,7 +17,7 @@ export default class ModalAddInformations extends Component {
             userData:undefined,
             time: new Date().getSeconds(),
             lastTime:null,
-            isOpen: '',
+            isOpen: false,
             height:'',
             idealWeight:'',
             needInfo: undefined,
