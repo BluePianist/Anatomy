@@ -40,4 +40,4 @@ Server runs on http://localhost:5000 and client on http://localhost:3000
 
 ### Authors
 
-LOPEZE Douglas - APPUDURAI Thivya
+[LOPEZE Douglas](https://github.com/BluePianist) and [APPUDURAI Thivya](https://github.com/ThivyaApp)
