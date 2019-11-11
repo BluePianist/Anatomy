@@ -35,14 +35,12 @@ Server runs on http://localhost:5000 and client on http://localhost:3000
 
 ### Dashboard page
 <img id="screenshot" src="/src/components/Pages/Sport/dashboard1.png">
+After logging in, you come to the dashboard page where you can have access to your data.
 
-<img id="screenshot" src="/src/components/Pages/Sport/dashboard2.png">
+There are 4 widgets in this dashboard.
+The first widget is a Card with your personnal data like your name, your current weight or your ideal weight.
+<img id="screenshot" src="/src/components/Pages/Sport/card.png" height="50% width="50%"> 
 
-<img id="screenshot" src="/src/components/Pages/Sport/dashboard3.png">
-
-<img id="screenshot" src="/src/components/Pages/Sport/dashboard3_add_weight.png">
-
-<img id="screenshot" src="/src/components/Pages/Sport/dashboard4_update_info.png">
 <br><br>
 
 ## Information
