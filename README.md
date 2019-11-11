@@ -39,7 +39,8 @@ After logging in, you come to the dashboard page where you can have access to yo
 
 There are 4 widgets in this dashboard.
 The first widget is a Card with your personnal data like your name, your current weight or your ideal weight.
-<img id="screenshot" src="/src/components/Pages/Sport/card.png" height="50% width="50%"> 
+
+<img id="screenshot" src="/src/components/Pages/Sport/card.png" height="25%" width="25%"> 
 
 <br><br>
 
