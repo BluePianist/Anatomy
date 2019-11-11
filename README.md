@@ -31,7 +31,7 @@ Server runs on http://localhost:5000 and client on http://localhost:3000
 <img id="screenshot" src="/src/components/Pages/Sport/anatomy.gif">
 
 ### Login page
-<img id="screenshot" src="/src/components/Pages/Sport/anatomy.gif">
+<img id="screenshot" src="/src/components/Pages/Sport/signup_signin.gif">
 
 ### Dashboard page
 <img id="screenshot" src="/src/components/Pages/Sport/dashboard1.png">
