@@ -1,7 +1,7 @@
-# ANATOMY - Sport App
+# ANATOMY - Keep track of your body performance
 > Our first React js Website. By [LOPEZE Douglas](https://github.com/BluePianist) and [APPUDURAI Thivya](https://github.com/ThivyaApp)
 <br>
-Sport app built with the MERN stack.<br>
+Web application built with the MERN stack.<br>
 This is a project using the following technologies:
 
 * React JS for the frontend
