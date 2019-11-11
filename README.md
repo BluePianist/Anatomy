@@ -27,6 +27,8 @@ npm run dev
 ```
 Server runs on http://localhost:5000 and client on http://localhost:3000
 <br><br>
+
+
 ## Demo
 ### Home page
 <img id="screenshot" src="/src/components/Pages/Sport/anatomy.gif">
@@ -36,7 +38,7 @@ Server runs on http://localhost:5000 and client on http://localhost:3000
 
 ### Dashboard page
 <img id="screenshot" src="/src/components/Pages/Sport/dashboard1.png">
-After logging in, you come to the dashboard page where you can have access to your data.
+After logging in, you come to the dashboard page where you have access to your data.
 
 There are 4 widgets in this dashboard. <br><br> 
 **1st Widget** <br>
@@ -65,7 +67,7 @@ You can add the name of the exercise, the duration (in minutes), the calories th
 <br><br>
 
 ## Information
-
 ### Authors
 
 [LOPEZE Douglas](https://github.com/BluePianist) and [APPUDURAI Thivya](https://github.com/ThivyaApp)
+
